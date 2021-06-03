@@ -62,6 +62,27 @@
         android:text="CLIENT"/>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/client_port_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PORT CLIENT"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,16 +110,14 @@
 
     </GridLayout>
 
-    <ScrollView
+
+
+    <TextView
+        android:id="@+id/price_text_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="300dp"
+        android:maxLines="10"/>
 
-        <TextView
-            android:id="@+id/price_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="10"/>
 
-    </ScrollView>
 
 </LinearLayout>
